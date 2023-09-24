@@ -1,0 +1,20 @@
+@import "./base/base";
+@import "./base/typography";
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./components/buttons";
+@import "./components/hearts";
+@import "./components/spinner";
+
+@import "./layouts/cards";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/info";
+@import "./layouts/nav";
+
+@import "./subpages/menuPage";
+@import "./subpages/dish";
+
+

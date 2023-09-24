@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4rem 2.8rem;
+
+    &__heading {
+        font-size: $font-title;
+    }
+
+    &__button {
+        width: auto;
+        height: 80%;
+        margin: 1.1rem .1rem;
+        margin-left: .8rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: $font-heading;
+        font-weight: 600;
+        border-radius: 3rem;
+        border: none;
+        background-color: $color-back;
+        
+    }
+
+    &__button:hover {
+        background-color: #eee0ff;
+        transition: .9s;
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: $homepage-shadow;
+    }
+
+    &__button:hover &__btn-icon {
+        color: #9356DC;
+    }
+
+    &__number {
+        color: #fff;
+        background-color: $color-primary;
+        border-radius: 10rem;
+        padding: .6rem 1.2rem;
+        margin-left: -2rem;
+    }
+
+    &__btn-icon {
+        padding: 2rem;
+        color: #808080;
+    }
+}

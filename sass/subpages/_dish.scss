@@ -1,0 +1,152 @@
+
+.dish {
+    position: relative;
+    // box-shadow: $homepage-shadow;
+    margin: 1.5rem 0;
+    border: none;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding-left: 1rem;
+    line-height: 10px;
+    position: relative;
+
+    animation: fadeInUpAnimation 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    
+    @keyframes fadeInUpAnimation {
+
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+  }
+
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-2 {
+    animation-delay: 0.9s;
+  }
+
+  .delay-3 {
+    animation-delay: 1.2s;
+  }
+
+  .dish:hover {
+    cursor: pointer;
+  }
+
+  
+  .dish:hover .check-box {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+  .dish:hover .full {
+    white-space: nowrap; 
+    width: 60%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+  .dish:hover .price{
+    transition: transform 450ms;
+    transform: translateX(-20vw);
+  }
+
+  .dish:hover .tick {
+    transform: rotate(0deg);
+    animation: tick-anim 700ms;
+  }
+
+  .name {
+    font-size: $font-title;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 1.8rem;
+  }
+  
+  .description {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-heading;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .price {
+    font-weight: 700;
+    padding-right: 2rem;
+    will-change: transform;
+    transition: transform 450ms;
+  }
+
+  .full {
+    line-height: 2rem;
+  }
+  
+.check-box {
+    background-color: $color-tertiary;
+        color: #fff;
+        font-size: $font-heading;
+        width: 80%;
+        height: 13rem;
+        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+        width: 20%;
+        cursor: pointer;
+        transition: 0.5s all ease-in-out;
+  }
+
+  .box-circle {
+    transition: opacity 450ms;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 100px;
+  }
+
+
+   .tick {
+        animation: tick-anim-back 700ms;
+        color: $color-tertiary;
+        padding: 1rem;
+        font-size: 2rem;
+  }
+
+
+@keyframes tick-anim-back {
+  0% {
+      transform: rotate(360deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes tick-anim {
+
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

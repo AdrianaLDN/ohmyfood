@@ -1,0 +1,55 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s visibility 0.75s;
+  animation: bounce, fade-out 2.2s .9s ease-out forwards;
+  z-index: 999;
+  // display: none;
+
+  div {
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem 0.3rem;
+    background: $color-secondary;
+    border-radius: 50%;
+    animation: .9s bounce infinite alternate;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+@keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -1.3rem, 0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+        padding: 1.2rem 2rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .4s;
+        border: none;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        color: #fff;
+        box-shadow: $homepage-shadow;
+        font-size: $font-text;
+
+}
+
+.btn:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 1rem 2rem rgba(#1d1d1d,.5);
+        cursor: pointer;
+        transition: ease .9s;
+        background-image: linear-gradient(#f38dd6, #a876e6);
+}

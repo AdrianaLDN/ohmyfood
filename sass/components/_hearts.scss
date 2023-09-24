@@ -1,0 +1,35 @@
+
+.hearts {
+    position: relative;
+    padding: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.hearts i { 
+    position: absolute;
+    font-size: 3.2rem;
+    transition: opacity 1.2s ease-in-out;
+  }
+  
+  .heart-full {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    font-size: 3.2rem;
+}
+  
+  .heart-full:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  
+  .hearts:hover .heart-full {
+      background-image: linear-gradient($color-primary, $color-secondary);
+  }
+ 
+  
+  
