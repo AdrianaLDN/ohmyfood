@@ -1,4 +1,4 @@
 # ohmyfood
 
 
-https://ohmyfoodadriana.netlify.app/
+https://adrianaldn.github.io/ohmyfood/
